@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineGO</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body bgcolor="#282828">
+    <header>
+        <button class="openbtn" onclick="toggleSidebar()">☰</button>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+        <a href="index.html">Home</a>
+        <a href="bookmark.html">Bookmarks</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="feedback.html">Feedback</a>
+        <!-- Add more sidebar links as needed -->
+    </div>
+
+    <div class="container">
+        <h1>Bookmarks</h1>
+        <table id="bookmarkTable">
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Name of the movie</th>
+                    <th>Action</th> <!-- Added delete action column -->
+                </tr>
+            </thead>
+            <tbody id="bookmarkList">
+                <!-- Bookmarked movies will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

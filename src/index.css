@@ -1,0 +1,138 @@
+/* Default font for the entire body */
+body {
+  font-family: Arial, sans-serif;
+  color: white; /* Set the default font color to white */
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  padding: 20px 0;
+  background-image: url('header.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white; /* Set link color to white */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #91D4EA; /* Blue background color */
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: black; /* Black font color */
+}
+
+th {
+  background-color: #0056b3; /* Dark blue header background color */
+  color: white; /* White font color */
+}
+
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: black;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+}
+
+.openbtn:hover {
+  background-color: black;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.search-container {
+  text-align: center; /* Center the text within the container */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+/* Increase size of search input */
+.search-container input[type="text"] {
+  width: 80%; /* Adjust the width as needed */
+  padding: 15px; /* Increase padding for better visibility and appearance */
+  font-size: 18px; /* Increase font size */
+  border-radius: 5px; /* Add some border radius for rounded corners */
+  border: 1px solid #ccc; /* Add a border for better visibility */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style the search button as a blue button */
+.search-container button {
+  padding: 15px 30px; /* Increase padding for better visibility and appearance */
+  font-size: 18px; /* Increase font size */
+  border: none; /* Remove button border */
+  background-color: #007bff; /* Blue background color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Add some border radius for rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition effect for hover */
+}
+
+.search-container button:hover {
+  background-color: #0056b3; /* Darker blue background color on hover */
+}

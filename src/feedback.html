@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="UTF-8" /> 
+    <title>CineGO</title> 
+    <link rel="stylesheet" href="feedback.css" /> 
+    <link rel="stylesheet" href="photon.min.css" />  
+</head> 
+<body bgcolor="#282828">
+    <header>
+        <button class="openbtn" onclick="toggleSidebar()">☰</button>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+        <a href="index.html">Home</a>
+        <a href="bookmark.html">Bookmarks</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="feedback.html">Feedback</a>
+        <!-- Add more sidebar links as needed -->
+    </div> 
+
+    <div class="mainWrapper"> 
+        <h1>We would like to hear a word from you</h1> 
+        <form> 
+            <div class="form-group"> 
+                <label>Name</label> 
+                <input id="fileName" type="text" class="form-control"> 
+            </div> 
+
+            <div class="form-group"> 
+                <label>Message</label> 
+                <textarea id="fileContents" class="form-control" rows="5"></textarea> 
+            </div> 
+        </form> 
+        <div class="button-group">
+            <button id="btnCreate">Create</button>       
+            <button id="btnRead">Read</button>
+            <button id="btnUpdate">Update</button> 
+            <button id="btnDelete">Delete</button>      
+        </div>
+    </div>  
+    <script src="main.js"></script> 
+</body> 
+</html> 

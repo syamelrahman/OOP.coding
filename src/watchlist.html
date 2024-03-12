@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineGO</title>
+    <link rel="stylesheet" href="watchlist.css">
+</head>
+<body bgcolor="#282828">
+    <header class="header">
+        <button class="openbtn" onclick="toggleSidebar()">☰ </button>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+        <a href="index.html">Home</a>
+        <a href="bookmark.html">Bookmark</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="feedback.html">Feedback</a>
+        <!-- Add more sidebar links as needed -->
+    </div>
+
+    <h2>Movie Watchlist</h2>
+    <form id="watchlistForm">
+        <label for="day">Day:</label>
+        <select id="day" name="day" required>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+        <label for="movie">Movie:</label>
+        <input type="text" id="movie" name="movie" required>
+        <button id="addMovieBtn" type="submit">Add Movie</button>
+    </form>
+    <br>
+    <table id="watchlistTable">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Movie</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="watchlistBody">
+            <!-- Movies will be inserted here dynamically -->
+        </tbody>
+    </table>
+
+    <script src="watchlist.js"></script>
+</body>
+</html>
